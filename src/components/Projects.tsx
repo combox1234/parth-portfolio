@@ -17,6 +17,30 @@ const Projects: React.FC = () => {
   
   const projects: Project[] = [
     {
+      id: 'multi-language-debugger',
+      title: 'Multi-language Code Debugger (Internship)',
+      description: 'Built a multi-language code debugger supporting C++, Python, and Java using automated language detection.',
+      technologies: ['Python', 'C++', 'Java', 'GenAI'],
+      image: 'https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg',
+      features: [
+        'Automated language detection for C++, Python, and Java',
+        'Sandboxed execution pipeline using subprocess isolation for secure code execution',
+        'Automated evaluation engine to validate outputs against multiple test cases'
+      ]
+    },
+    {
+      id: 'mcp-server-dev',
+      title: 'MCP Server Development (Internship)',
+      description: 'Developed a modular backend server architecture implementing routing, middleware, and authentication for a Model Context Protocol server.',
+      technologies: ['Backend', 'GenAI', 'Prompt Engineering'],
+      image: 'https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg',
+      features: [
+        'Modular backend architecture with routing, middleware, and authentication',
+        'Integrated and refactored AI-generated modules to improve maintainability',
+        'Applied AI-assisted workflows with prompt engineering throughout the lifecycle'
+      ]
+    },
+    {
       id: 'documind-ai',
       title: 'DocuMind AI',
       description:

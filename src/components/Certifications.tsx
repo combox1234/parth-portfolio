@@ -15,81 +15,74 @@ const Certifications: React.FC = () => {
 
   const certifications: Certification[] = [
     {
-      id: 'aws-cloud',
-      title: 'AWS Cloud Practitioner',
-      issuer: 'Amazon Web Services',
-      date: '2024',
-      image: '/certificates/parth certificate/aws certificate.png'
+      id: 'digital-nexus-ai',
+      title: 'GenAI/LLM Internship',
+      issuer: 'Digital Nexus AI',
+      date: '2025',
+      image: '/certificates/parth certificate/Digital Nexus AI.png'
     },
     {
-      id: 'google-cert',
-      title: 'Google Certificate',
+      id: 'google-cloud-cybersecurity',
+      title: 'Google Cloud Career Launchpad Cybersecurity track',
       issuer: 'Google',
       date: '2024',
-      image: '/certificates/parth certificate/google certificate.png'
+      image: '/certificates/parth certificate/Google Cloud Career Launchpad Cybersecurity track.png'
     },
     {
       id: 'java-masterclass',
-      title: 'Java Master Class 130+',
+      title: 'Java Masterclass 2025, 130+',
       issuer: 'Udemy',
       date: '2024',
-      image: '/certificates/parth certificate/java master class 130+.png'
+      image: '/certificates/parth certificate/Java Masterclass 2025,130+.png'
+    },
+    {
+      id: 'aws-for-everyone',
+      title: 'AWS for Everyone',
+      issuer: 'Udemy',
+      date: '2024',
+      image: '/certificates/parth certificate/AWS for everyone.png'
+    },
+    {
+      id: 'build-llm-apps',
+      title: 'Build LLM Powered Applications',
+      issuer: 'Udemy',
+      date: '2024',
+      image: '/certificates/parth certificate/Build LLM Powered Applications.png'
     },
     {
       id: 'java-oop',
-      title: 'Java Object-Oriented Programming',
-      issuer: 'LinkedIn Learning / Other',
+      title: 'OOP - Basics to Advance (Java)',
+      issuer: 'Scaler',
       date: '2024',
-      image: '/certificates/parth certificate/java oop.png'
+      image: '/certificates/parth certificate/OOP - Basics to advance(java).png'
     },
     {
-      id: 'llm-app',
-      title: 'LLM App Development',
-      issuer: 'Unknown',
+      id: 'os-course',
+      title: 'Operating System Course',
+      issuer: 'Scaler',
       date: '2024',
-      image: '/certificates/parth certificate/llm app.png'
+      image: '/certificates/parth certificate/Operating System Course.png'
     },
     {
-      id: 'opjava',
-      title: 'Java Programming',
-      issuer: 'Unknown',
+      id: 'python-data-science',
+      title: 'Python for Data Science',
+      issuer: 'Scaler',
       date: '2024',
-      image: '/certificates/parth certificate/opjava.png'
+      image: '/certificates/parth certificate/Pythin for Data Science with Assignments.png'
     },
     {
-      id: 'selenium',
-      title: 'Selenium',
-      issuer: 'Unknown',
+      id: 'software-engineering',
+      title: 'Software Engineering Course',
+      issuer: 'Scaler',
       date: '2024',
-      image: '/certificates/parth certificate/sel.png'
+      image: '/certificates/parth certificate/Software Engineering Course.png'
     },
     {
-      id: 'uiux',
+      id: 'ui-ux',
       title: 'UI/UX Design',
       issuer: 'Simplilearn',
       date: '2024',
       image: '/certificates/parth certificate/simplilearn uiux.png'
-    },
-    {
-      id: 'udemy-cert',
-      title: 'Udemy Certificate',
-      issuer: 'Udemy',
-      date: '2024',
-      image: '/certificates/parth certificate/UC-0842a6e3-381d-41ae-acdc-11e1ebdeaa34.png'
-    },
-    {
-      id: 'completion-cert',
-      title: 'Completion Certificate',
-      issuer: 'Unknown',
-      date: '2024',
-      image: '/certificates/parth certificate/Completion Certificate - Parth Patil.png'
-    },
-    {
-      id: 'meta-cert',
-      title: 'Certificate',
-      issuer: 'Unknown',
-      date: '2024',
-      image: '/certificates/parth certificate/cbb67b01d99793bb063f62f9e6b825c8241bad2bca095c8cda98e90eab3b6209.png'
     }
   ];
 
@@ -120,23 +113,57 @@ const Certifications: React.FC = () => {
     };
   }, []);
 
+  const experienceCerts = certifications.filter(c => c.id === 'digital-nexus-ai');
+  const skillCerts = certifications.filter(c => c.id !== 'digital-nexus-ai');
+
   return (
     <section id="certifications" className="py-20 relative">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl font-bold text-center mb-4 text-white">
-          Certifications
+          Experience & Certifications
         </h2>
         <div className="w-20 h-1 bg-teal-500 mx-auto mb-12"></div>
 
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {certifications.map((cert, index) => (
+          {/* Experience Section */}
+          <h3 className="text-2xl font-bold text-white mb-6">Experience</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            {experienceCerts.map((cert, index) => (
               <div
                 key={cert.id}
                 ref={el => certRefs.current[index] = el}
                 onClick={() => setSelectedCert(cert)}
                 className="cursor-pointer bg-gray-900 rounded-xl shadow-xl overflow-hidden transform opacity-0 translate-x-[-100px] transition-all duration-700 ease-out hover:shadow-2xl border border-gray-800 hover:border-teal-500"
                 style={{ transitionDelay: `${index * 150}ms` }}
+              >
+                <div className="h-64 overflow-hidden">
+                  <img
+                    src={cert.image}
+                    alt={cert.title}
+                    className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-white mb-2">
+                    {cert.title}
+                  </h3>
+                  <p className="text-teal-400 font-medium mb-2">{cert.issuer}</p>
+                  <p className="text-gray-400 text-sm">{cert.date}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Skill Certifications Section */}
+          <h3 className="text-2xl font-bold text-white mb-6">Skill Certifications</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {skillCerts.map((cert, index) => (
+              <div
+                key={cert.id}
+                ref={el => certRefs.current[experienceCerts.length + index] = el}
+                onClick={() => setSelectedCert(cert)}
+                className="cursor-pointer bg-gray-900 rounded-xl shadow-xl overflow-hidden transform opacity-0 translate-x-[-100px] transition-all duration-700 ease-out hover:shadow-2xl border border-gray-800 hover:border-teal-500"
+                style={{ transitionDelay: `${(experienceCerts.length + index) * 150}ms` }}
               >
                 <div className="h-64 overflow-hidden">
                   <img

@@ -77,7 +77,7 @@ const About: React.FC = () => {
             <div className="flex justify-center">
               <div className="relative rounded-full w-80 h-80">
                 {/* Image with glow & hover scale */}
-                <div className="rounded-full p-1 bg-black border-2 border-teal-500 shadow-[0_0_20px_rgba(20,255,200,0.5)] transition-all duration-500 ease-in-out hover:scale-105 hover:shadow-[0_0_30px_rgba(20,255,200,0.7)] w-full h-full">
+                <div className="rounded-full p-1 bg-black border-2 border-teal-500 shadow-[0_0_20px_rgba(20,255,200,0.5)] transition-all duration-500 ease-in-out hover:scale-90 hover:shadow-[0_0_30px_rgba(20,255,200,0.7)] w-full h-full">
                   <img
                     src="/Photo/WhatsApp_Image_2026-02-21_at_11.24.38_PM-removebg-preview.png"
                     alt="Parth Patil"

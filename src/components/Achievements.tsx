@@ -15,6 +15,14 @@ const Achievements: React.FC = () => {
 
   const achievements: Achievement[] = [
     {
+      id: 'internship-digital-nexus',
+      title: 'GenAI/LLM Intern @ Digital Nexus AI',
+      description: 'Gained hands-on experience in Generative AI, LLMs, and corporate software development. Built a multi-language debugger and an MCP server.',
+      icon: <Star className="text-teal-400" size={24} />,
+      category: 'technical',
+      date: 'May 2025 - Sep 2025'
+    },
+    {
       id: 'TIGC 2026',
       title: '2026 Technology Infusion Grand Challenge - Undergraduate edition',
       description: 'Participated in 2026 Technology Infusion Grand Challenge - Undergraduate edition.',
@@ -37,14 +45,6 @@ const Achievements: React.FC = () => {
       icon: <Award className="text-teal-400" size={24} />,
       category: 'technical',
       date: '2025'
-    },
-    {
-      id: 'codechef-4star',
-      title: 'CodeChef 4-Star Rating Achievement',
-      description: 'Achieved a CodeChef rating of 1867 (4-Star, Div 2) with a global rank of 4,207 and India rank of 3,280. Solved 200+ Data Structures and Algorithms problems across platforms.',
-      icon: <Code className="text-teal-400" size={24} />,
-      category: 'technical',
-      date: '2024'
     },
     {
       id: 'hackerrank-2star',
@@ -317,7 +317,7 @@ const Achievements: React.FC = () => {
                   <div className="w-20 h-20 mx-auto rounded-full overflow-hidden border-4 border-green-500 group-hover:border-green-400 transition-colors">
                     <img
                       src="/Photo/WhatsApp_Image_2026-02-21_at_11.24.38_PM-removebg-preview.png"
-                      alt="Siddhesh Patil"
+                      alt="Parth Patil"
                       className="w-full h-full object-contain"
                     />
                   </div>
@@ -355,7 +355,7 @@ const Achievements: React.FC = () => {
                   <div className="w-20 h-20 mx-auto rounded-full overflow-hidden border-4 border-yellow-500 group-hover:border-yellow-400 transition-colors">
                     <img
                       src="/Photo/WhatsApp_Image_2026-02-21_at_11.24.38_PM-removebg-preview.png"
-                      alt="Siddhesh Patil"
+                      alt="Parth Patil"
                       className="w-full h-full object-contain"
                     />
                   </div>
