@@ -124,7 +124,7 @@ const Footer: React.FC = () => {
                 </svg>
               </a>
               <a
-                href="https://linkedin.com/in/parth-patil"
+                href="https://www.linkedin.com/in/parth-patil-910482292"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-teal-400 transition-colors"

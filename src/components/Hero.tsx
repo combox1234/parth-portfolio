@@ -154,7 +154,7 @@ const Hero: React.FC = () => {
               <span>GitHub</span>
             </a>
             <a
-              href="https://linkedin.com/in/parth-patil"
+              href="https://www.linkedin.com/in/parth-patil-910482292"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-6 py-3 bg-gray-800 hover:bg-gray-700 rounded-full text-gray-300 hover:text-white transition-all duration-300 border border-gray-700 hover:border-gray-600"
@@ -163,7 +163,7 @@ const Hero: React.FC = () => {
               <span>LinkedIn</span>
             </a>
             <a
-              href="https://leetcode.com/"
+              href="https://leetcode.com/u/skullroster/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-6 py-3 bg-gray-800 hover:bg-gray-700 rounded-full text-gray-300 hover:text-white transition-all duration-300 border border-gray-700 hover:border-gray-600"
@@ -218,7 +218,7 @@ const Hero: React.FC = () => {
             </button>
             {/* Resume Iframe */}
             <iframe
-              src="/resume.pdf"
+              src="/Parth_Patil_resume.pdf"
               title="Resume"
               className="w-full h-full rounded-xl"
             />
