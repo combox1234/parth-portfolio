@@ -33,7 +33,7 @@ const Certifications: React.FC = () => {
       title: 'Java Masterclass 2025, 130+',
       issuer: 'Udemy',
       date: '2024',
-      image: '/certificates/parth certificate/Java Masterclass 2025,130+.png'
+      image: '/certificates/parth certificate/Java Masterclass 2025.png'
     },
     {
       id: 'aws-for-everyone',
